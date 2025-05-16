@@ -1,0 +1,13 @@
+.list-cell {
+    -fx-background-color: #202020;
+    -fx-text-fill: white; /* Optional:  Set text color for contrast */
+}
+
+.list-cell:selected {
+    -fx-background-color: #336699; /* Optional: Style when selected */
+    -fx-text-fill: white; /* Optional: Text color when selected */
+}
+
+.list-view {
+    -fx-background-color: #202020; /* optional if you want to override the ListView's background color */
+}

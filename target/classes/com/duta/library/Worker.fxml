@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #151515;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.duta.library.controller.Worker">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" prefHeight="720.0" prefWidth="205.0" style="-fx-background-color: #202020;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" textAlignment="CENTER" wrappingWidth="205.0">
+               <font>
+                  <Font name="Poppins ExtraBold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Text>
+            <Button fx:id="B_Listing" mnemonicParsing="false" prefHeight="54.0" prefWidth="274.0" style="-fx-background-color: #202020; -fx-alignment: left;" text="LISTING" textFill="WHITE" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Rubik Light" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <Button fx:id="B_Student" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="274.0" style="-fx-background-color: #202020; -fx-alignment: left;" text="STUDENT" textFill="WHITE" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Rubik Light" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="B_Worker" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="274.0" style="-fx-background-color: #202020; -fx-alignment: left;" text="WORKER" textFill="WHITE" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Rubik Light" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="B_Borrow" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="274.0" style="-fx-background-color: #202020; -fx-alignment: left;" text="BORROW" textFill="WHITE" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Rubik Light" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="B_Return" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="274.0" style="-fx-background-color: #202020; -fx-alignment: left;" text="RETURN" textFill="WHITE" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Rubik Light" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+      <Text fill="WHITE" layoutX="255.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worker">
+         <font>
+            <Font name="Rubik Light" size="16.0" />
+         </font>
+      </Text>
+      <ListView fx:id="LV_WorkerList" layoutX="255.0" layoutY="149.0" prefHeight="510.0" prefWidth="599.0" style="-fx-background-color: #202020;" />
+      <TextField fx:id="TF_Code" layoutX="1023.0" layoutY="112.0" prefHeight="26.0" prefWidth="205.0" promptText="Code" style="-fx-background-color: #202020; -fx-text-fill: #ffffff;" />
+      <HBox alignment="CENTER_LEFT" layoutX="900.0" layoutY="230.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TF_Name" prefHeight="26.0" prefWidth="334.0" promptText="..." style="-fx-background-color: #202020; -fx-text-fill: #ffffff;">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="900.0" layoutY="284.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="CB_Gender" prefHeight="26.0" prefWidth="431.0" style="-fx-background-color: #202020; -fx-text-fill: #ffffff;">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="900.0" layoutY="395.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TF_Address" prefHeight="26.0" prefWidth="334.0" promptText="..." style="-fx-background-color: #202020; -fx-text-fill: #ffffff;">
+               <HBox.margin>
+                  <Insets left="22.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <TextField fx:id="TF_Department" layoutX="1023.0" layoutY="157.0" prefHeight="26.0" prefWidth="205.0" promptText="Department" style="-fx-background-color: #202020; -fx-text-fill: #ffffff;" />
+      <HBox layoutX="900.0" layoutY="520.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Button fx:id="B_Add" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #203030;" text="Add" textFill="WHITE" />
+            <Button fx:id="B_Edit" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #202030;" text="Edit" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="B_Delete" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #302020;" text="Delete" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="902.0" layoutY="94.0" prefHeight="109.0" prefWidth="100.0" style="-fx-background-color: #202020;">
+         <children>
+            <ImageView fx:id="IV_WorkerPhoto" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/Unknown_Icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <TextField fx:id="TF_Search" layoutX="255.0" layoutY="94.0" prefHeight="26.0" prefWidth="599.0" promptText="Search" style="-fx-background-color: #202020; -fx-text-fill: #ffffff;" />
+      <HBox alignment="CENTER_LEFT" layoutX="900.0" layoutY="339.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TF_Phone" prefHeight="26.0" prefWidth="334.0" promptText="..." style="-fx-background-color: #202020; -fx-text-fill: #ffffff;">
+               <HBox.margin>
+                  <Insets left="32.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="900.0" layoutY="451.0" prefHeight="26.0" prefWidth="327.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Working Hours">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TF_WorkingHours" prefHeight="26.0" prefWidth="334.0" promptText="HH:MM - HH:MM" style="-fx-background-color: #202020; -fx-text-fill: #ffffff;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</Pane>
