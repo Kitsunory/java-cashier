@@ -1,3 +1,2 @@
-# java-cashier
-# java-cashier
-# java-cashier
+# Simple Cashier Made with Java
+For school project.
